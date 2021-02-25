@@ -13,10 +13,10 @@
     <h1 class="main-title">Crypto Deposit</h1>
     <h2>Click on Crypto of choice for deposit information.</h2>
 
-    <img id="logo" class="thumbnail" src="images\btclogo.png" alt="btc">
-    <img id="logo" class="thumbnail"  src="images\ethlogo.png" alt="eth">
-    <img id="logo" class="thumbnail"  src="images\dogelogo.png" alt="doge">
-    <img id="logo" class="thumbnail"  src="images\usdclogo.png" alt="usdc">
+    <img id="logo" class="thumbnail" onclick=modalshow(0) src="images\btclogo.png" alt="btc">
+    <img id="logo" class="thumbnail" onclick=modalshow(1) src="images\ethlogo.png" alt="eth">
+    <img id="logo" class="thumbnail" onclick=modalshow(2) src="images\dogelogo.png" alt="doge">
+    <img id="logo" class="thumbnail" onclick=modalshow(3)  src="images\usdclogo.png" alt="usdc">
 
 
 
@@ -45,7 +45,7 @@
         <div id="dogeCaption">doge</div>
     </div>
 
-    <div id="usdcModal" class="modal"></div>
+    <div id="usdcModal" class="modal">
 
         <img id="myUsdc" alt="USDC QR Code" src="images\qrcodeusdc.png" class="qrcode">
         <span class="close">&times;</span> <!--Close Button-->

@@ -6,32 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
+
 </head>
 
 <body>
     <h1 class="main-title">Crypto Deposit</h1>
+    <h2>Click on Crypto of choice for deposit information.</h2>
 
-    <img id="btcLogo" class="thumbnail"  src="images\btclogo.png" alt="btc">
-    <img id="ethLogo" class="thumbnail"  src="images\ethlogo.png" alt="eth">
-    <img id="dogeLogo" class="thumbnail"  src="images\dogelogo.png" alt="doge">
-    <img id="usdcLogo" class="thumbnail"  src="images\usdclogo.png" alt="usdc">
-
-
-        <div class="main-wrap" id="mainWrap">
+    <img id="logo" class="thumbnail" src="images\btclogo.png" alt="btc">
+    <img id="logo" class="thumbnail"  src="images\ethlogo.png" alt="eth">
+    <img id="logo" class="thumbnail"  src="images\dogelogo.png" alt="doge">
+    <img id="logo" class="thumbnail"  src="images\usdclogo.png" alt="usdc">
 
 
 
-        
-        <!-- <div id="btc" class="coin-frame">
-        5<img id="myBtc" alt="BTC QR Code" src="images\qrcodebtc.png" class="qrcode">                QR CODE IMAGES AND ID's USED FOR LATER.
+            
+    <div id="modal" class="modal">
+    
+    <img id="myBtc" alt="BTC QR Code" src="images\qrcodebtc.png" class="qrcode">     -->
+        <span class="close">&times;</span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="btcCaption">btc</div>
+    </div>
+
+    <div id="ethModal" class="modal">
+
         <img id="myEth" alt="ETH QR Code" src="images\qrcodeeth.png" class="qrcode">
+        <span class="close">&times;</span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="ethCaption">eth</div>
+    </div>
+
+    <div id="dogeModal" class="modal">
+
         <img id="myDoge" alt="Doge QR Code" src="images\qrcodedoge.png" class="qrcode">
-        <img id="myUsdc" alt="USDC QR Csylode" src="images\qrcodeusdc.png" class="qrcode"> 
+        <span class="close">&times;</span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="dogeCaption">doge</div>
+    </div>
+
+    <div id="usdcModal" class="modal"></div>
+
+        <img id="myUsdc" alt="USDC QR Code" src="images\qrcodeusdc.png" class="qrcode">
+        <span class="close">&times;</span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="usdcCaption">usdc</div>
+
+    </div>
 
 
 
-
-
+<!--
+</div>
 
             <h1>Bitcoin (BTC)</h1>
             <h2 class="hash">Bitcoin: 1PXcCeT6wv6enamugyd3Fa6qXgQt4gozE6</h2>
@@ -54,8 +80,15 @@
             <img src="images\qrcodeusdc.png" class="qrcode">
         </div> 
 
-    </div>
-    -->
+
+-->
+
+
+<script src="scripts3rdtry.js"></script>
+
+
+
 </body>
+
 
 </html>

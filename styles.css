@@ -41,6 +41,9 @@ h1{
     margin-bottom: 44px;
     height: 30vh;
     background-color: #F2F98C;
+
+    cursor: pointer;
+    transition: 0.3s;
 }
 .modal {
     display: none; /* Hidden by default */
@@ -56,6 +59,37 @@ h1{
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
 
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .qrcode{
+    max-width: 70%;
+    max-height: 70%;
+
+  }
 .hash{
     font-size: 8px;
     color: black;
@@ -65,3 +99,45 @@ h1{
     padding-left: 1px;
     padding-right: 1px;
 }
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+  body {
+    width: 60%;
+  }
+    
+}
+@media screen and (min-width: 600px) {
+    body {
+      width:50%;
+    }
+      
+  }
+  
+  @media screen and (min-width: 800px) {
+    body {
+      width:40%;
+    }
+      
+  }
+  
+  @media screen and (min-width: 1000px) {
+    body {
+      width:30%;
+    }
+      
+  }
+  
+  @media screen and (min-width: 1300px) {
+    body {
+      width:20%;
+    }
+      
+  }
+  
+  
+
+
+

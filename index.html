@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tienne:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-    <h1 class="main-title">Crypto Deposit</h1>
-    <h2 class="instruction">Click on Crypto of choice for deposit information.</h2>
-
+    <h1 class="main-title">Tip <span class="blue">Me</span></h1>
+    <div class="instruction">
+    <h2>I help when I can! Please feel free to tip at any of the addresses below.</h2>
+    <h3>(Click on Crypto of choice for deposit information.)</h3>
+    </div>
     <img id="logo" class="thumbnail" onclick=modalshow(0) src="images\btclogo.png" alt="btc">
     <img id="logo" class="thumbnail" onclick=modalshow(1) src="images\ethlogo.png" alt="eth">
     <img id="logo" class="thumbnail" onclick=modalshow(2) src="images\dogelogo.png" alt="doge">
     <img id="logo" class="thumbnail" onclick=modalshow(3)  src="images\usdclogo.png" alt="usdc">
+    <img id="logo" class="thumbnail" onclick=modalshow(4)  src="images\litecoinlogo.png" alt="usdc">
+    <img id="logo" class="thumbnail" onclick=modalshow(5)  src="images\bitcoincash-logo.png" alt="usdc">
+    <img id="logo" class="thumbnail" onclick=modalshow(6)  src="images\stellarlumens-logo.png" alt="usdc">
 
 
 
@@ -24,9 +33,9 @@
     <div id="modal" class="modal">
     
     <img id="myBtc" alt="BTC QR Code" src="images\qrcodebtc.png" class="qrcode">     -->
-        <span class="close">&times;</span> <!--Close Button-->
+        <span class="close"></span> <!--Close Button-->
         <img class="modal-content" id="cryptoImg">
-        <div id="btcCaption">btc</div>
+        <div id="btcCaption"class="caption">Bitcoin: 1PXcCeT6wv6enamugyd3Fa6qXgQt4gozE6</div>
     </div>
 
     <div id="ethModal" class="modal">
@@ -34,54 +43,55 @@
         <img id="myEth" alt="ETH QR Code" src="images\qrcodeeth.png" class="qrcode">
         <span class="close">&times;</span> <!--Close Button-->
         <img class="modal-content" id="cryptoImg">
-        <div id="ethCaption">eth</div>
+        <div id="ethCaption" class="caption">ERC20: 0x68ddb172656cbf0f15d402c0e051eae55e35f4da</div>
     </div>
 
     <div id="dogeModal" class="modal">
 
         <img id="myDoge" alt="Doge QR Code" src="images\qrcodedoge.png" class="qrcode">
-        <span class="close">&times;</span> <!--Close Button-->
+        <span class="close"></span> <!--Close Button-->
         <img class="modal-content" id="cryptoImg">
-        <div id="dogeCaption">doge</div>
+        <div id="dogeCaption" class="caption">Doge Address: DFEAAdKgvZH77DRWcUsP66792qCrXj6ybt</div>
     </div>
 
     <div id="usdcModal" class="modal">
 
         <img id="myUsdc" alt="USDC QR Code" src="images\qrcodeusdc.png" class="qrcode">
-        <span class="close">&times;</span> <!--Close Button-->
+        <span class="close"></span> <!--Close Button-->
         <img class="modal-content" id="cryptoImg">
-        <div id="usdcCaption">usdc</div>
+        <div id="usdcCaption" class="caption">ERC20: 0x68ddb172656cbf0f15d402c0e051eae55e35f4da</div>
+
+    </div>
+
+    <div id="ltcModal" class="modal">
+
+        <img id="myLtc" alt="LTC QR Code" src="images/qrcodeltc.png" class="qrcode">
+        <span class="close"></span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="ltcCaption" class="caption">MVUsMHriUasboCXzirLmZuWkaQxU5ibceR</div>
+
+    </div>
+
+    <div id="bchModal" class="modal">
+
+        <img id="myBch" alt="BCH QR Code" src="images/qrcodebch.png" class="qrcode">
+        <span class="close"></span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="bchCaption" class="caption">qqplstshfy9ktpvdxvkeqmv5xu6n7cfjjve0qkj0jd</div>
+
+    </div>
+
+    <div id="xlmModal" class="modal">
+
+        <img id="myBch" alt="XLM QR Code" src="images/qrcodebch.png" class="qrcode">
+        <span class="close"></span> <!--Close Button-->
+        <img class="modal-content" id="cryptoImg">
+        <div id="xlmCaption" class="caption">GDQP2KPQGKIHYJGXNUIYOMHARUARCA7DJT5FO2FFOOKY3B2WSQHG4W37 <br> Memo:1215712276 </div>
 
     </div>
 
 
 
-<!--
-</div>
-
-            <h1>Bitcoin (BTC)</h1>
-            <h2 class="hash">Bitcoin: 1PXcCeT6wv6enamugyd3Fa6qXgQt4gozE6</h2>
-            <img src="images\qrcodebtc.png" class="qrcode">
-
-        </div>
-        <div id="eth" class="coin-frame">
-            <h1>Etherium (ETH)</h1>
-            <h2 class="hash">ERC20: 0x68ddb172656cbf0f15d402c0e051eae55e35f4da</h2>
-            <img src="images\qrcodeeth.png" class="qrcode">
-        </div>
-        <div id="dnt" class="coin-frame">
-            <h1>Dogecoin (DOGE)</h1>
-            <h2 class="hash">Doge Address: DFEAAdKgvZH77DRWcUsP66792qCrXj6ybt</h2>
-            <img src="images\qrcodedoge.png" class="qrcode">
-        </div>
-        <div id="doge" class="coin-frame">
-            <h1>USD Coin</h1>
-            <h2 class="hash">ERC20: 0x68ddb172656cbf0f15d402c0e051eae55e35f4da</h2>
-            <img src="images\qrcodeusdc.png" class="qrcode">
-        </div> 
-
-
--->
 
 
 <script src="scripts.js"></script>

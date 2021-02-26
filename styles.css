@@ -1,16 +1,20 @@
 html{
     width: 100vw;
     background-color: #F2F98C;
+    background-image: url("images/dark-mosaic.png");
+
 }
 body{
     display: flex; 
     flex-direction: column;
     width: 75%;
-    background-color:black;
+    background-color: rgba(0, 0, 0, 1);
     text-align: center;
     margin: auto;
     padding-left: 10px;
     padding-right: 20px;
+    background-image: url("images/gun-metal.png");
+
 }
 
 img{
@@ -19,14 +23,21 @@ img{
 }
 
 h1{
-    font-size: 22px;
-    font-family: "College", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-family: 'Tienne', serif;
     font-weight: normal;
     font-style: normal;
 }
 
 h2{
     color: #F2F98C;
+    font-family: 'Dosis', sans-serif;
+}
+
+h3{
+  font-size: 12px;
+  color: #F2F98C;
+  font-family: 'Dosis', sans-serif;
 }
 
 .main-title{
@@ -36,13 +47,15 @@ h2{
  background-color: #F2F98C;
 padding-top: 2.5%;
 padding-bottom: 2.5%;
+border-radius: 5px;
 }
 .instruction{
-  border-style: inset;
+  border-style: solid;
   border-color: #F2F98C;
-  border-radius: 2.5%;
-  padding-right: 1%;
-  padding-right: 1%;
+  border-radius: 1%;
+  padding: 2%;
+  margin-bottom: 10%;
+
 }
 .main-wrap{
     display: flex;
@@ -99,7 +112,7 @@ padding-bottom: 2.5%;
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: #F2F98C;
     padding: 10px 0;
     height: 150px;
   }
@@ -113,10 +126,21 @@ padding-bottom: 2.5%;
     font-weight: bold;
     transition: 0.3s;
   }
+  .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
   .qrcode{
     height: 300px;
     width: 300px;
-
+    pointer-events: none;
+    background: url('your_transparent.png');
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
+    background: none !important;
+    z-index: 3;
   }
 .hash{
     font-size: 8px;
@@ -128,6 +152,17 @@ padding-bottom: 2.5%;
     padding-right: 1px;
 }
 
+
+/* COLOR CLASSES */
+
+.blue {
+  color: #F2F98C;
+  -webkit-text-stroke: 2px black;
+}
+
+.blue:hover{
+ color: black;
+}
 
 
 /* MEDIA QUERIES */
@@ -185,12 +220,22 @@ padding-bottom: 2.5%;
   }
   /* FONTS */
 
-  @font-face {
-    font-family: 'College';
-    src: url('fonts\college_halo-webfont.woff2') format('woff2'),
-         url('fonts\college_halo-webfont.woff') format('woff');
+
+  /* @font-face {
+    font-family: "College";
+    src: url('fonts/college_halo-webfont.woff2') format('woff2'),
+         url('fonts/college_halo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+  font-family: 'Arialic Hollow';
+  src: url('fonts/ArialicHollow.woff2') format('woff2'),
+      url('fonts/ArialicHollow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ */
